@@ -6,26 +6,18 @@
 
     using namespace std;
 
-
-    // function to get age ( by Toqa Ehab )
     int age ( int x ) {
     return x;
     }
 
-
-    // function to calculate BMI ( by Ahmed Hafez )
-    double calculate (double weight , double height) {
+   double calculate (double weight , double height) {
     return (weight/pow(height,2));
     }
 
-
-    // function to classify the person ( by Haydy Mobasher )
     int classifyperson ( double BMI ) {
         return BMI ;
     }
 
-
-    // function to recommend gyms ( by Hassan Ibrahim )
     string gymname ( string name ){
     return name;
     }
@@ -34,7 +26,6 @@
     return address;
     }
 
-     // doctors recommendations function ( by fatma Mohamed )
     string doctorsnames (string doc) {
     return doc;
     }
