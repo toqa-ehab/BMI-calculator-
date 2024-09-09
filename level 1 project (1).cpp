@@ -1,6 +1,3 @@
-// Haydy Mobasher id:42310212 , Toqa Ehab id:42310114 , Fatma Mohamed id:42310137
-// Ahmed Hafez id:42310184 , Hassan Ibrahim id:42310305
-
 // BMI Calculator : Body Mass Index (BMI) is a guideline to track weight issues.
 // It is a measurement of body fat based on weight.
 
@@ -44,8 +41,7 @@
 
         int main (){
 
-        // Call of age function ( by Toqa Ehab )
-        int x;
+            int x;
         cout<<"Enter your age :";
         cin>>x;
         if(x<18){
@@ -53,8 +49,6 @@
         exit(0);
     }
 
-
-       // Call of BMI calculation ( by Ahmed Hafez )
     double height;
     double weight;
     double BMI ;
@@ -70,10 +64,7 @@
     if (height == 0) {
         cout << "error(height can not be zero)" <<'\n';
     }
-
-
-        // Call of  classification function ( by Haydy Mobasher )
-
+            
         if ( BMI <= 18.3){
         cout <<"You're underweight"<<endl<<"----------------------------------------"<<endl;
         }
@@ -118,7 +109,6 @@
     }
     }
 
-        // call of  gym function ( by Hassan Ibrahim )
         cout<<" Do you need a gym ? ";
         string ans;
         cin>>ans;
@@ -143,8 +133,6 @@
     else
     cout<< "Good luck"<<endl<<"----------------------------------------"<<endl;
 
-
-      // call of doctors recommendations function ( by fatma Mohamed )
     cout <<" Do you need a doctor ? ";
     string sol;
     cin>>sol;
