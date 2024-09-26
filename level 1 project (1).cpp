@@ -6,11 +6,12 @@
 
     using namespace std;
 
+
     int age ( int x ) {
     return x;
     }
 
-   double calculate (double weight , double height) {
+    double calculate (double weight , double height) {
     return (weight/pow(height,2));
     }
 
@@ -32,13 +33,19 @@
 
         int main (){
 
-            int x;
+        cout<<"                                 Welcome to our BMI Calculator \n";
+cout<<"                                -------------------------------\n";
+
+        int x;
         cout<<"Enter your age :";
         cin>>x;
         if(x<18){
-        cout<<"this BMI category is NOT for children!"<<endl;
+        cout<<"This BMI category is NOT for children!"<<endl;
+    cout<<"Thanks for using our BMI Calculator !"<<endl<<"----------------------------------------"<<endl;
+
         exit(0);
     }
+
 
     double height;
     double weight;
@@ -55,7 +62,7 @@
     if (height == 0) {
         cout << "error(height can not be zero)" <<'\n';
     }
-            
+
         if ( BMI <= 18.3){
         cout <<"You're underweight"<<endl<<"----------------------------------------"<<endl;
         }
@@ -69,9 +76,6 @@
         cout <<"You're Obese"<<endl<<"----------------------------------------"<<endl;
         }
 
-
-        // Array
-
         string arr[4]={"underweight","normal","overweight","obese"};
         cout<<"Enter the  type of body you want to know info about :"<<endl;
         for(int i=0;i<4;i++){
@@ -79,64 +83,71 @@
         }
         string bmi;
         cin>>bmi;
+        cout<<"\n";
         for(int i =0;i<4;i++){
         if(arr[i]==bmi){
 
         if(bmi == "underweight"){
-        cout<<"You have to keep contact with doctors"<<endl<<"----------------------------------------"<<endl;
+        cout<<" It is important to eat a variety of foods that give you the nutrition you need .\n"<<
+        " You should make sure you eat foods with enough energy to help you gain weight,\n"<<
+         " protein to repair your body and build your muscles,and vitamins and \n minerals to keep your body cells functioning well."<<endl<<"----------------------------------------"<<endl;
         }
         else if(bmi == "normal"){
-        cout<<"stay healthy "<<endl<<"----------------------------------------"<<endl;
+        cout<<"stay healthy. "<<endl<<"----------------------------------------"<<endl;
         }
         else if(bmi == "overweight"){
-        cout <<"You have to do execises and focus on a balanced diet"<<endl<<"----------------------------------------"<<endl;
+        cout <<"Overweight is a condition of excessive fat deposits."<<
+        "You have to do exercises and focus on a balanced diet."<<endl<<"----------------------------------------"<<endl;
         }
         else if (bmi == "obese"){
-        cout <<"You have to keep contact with doctors , focus on reduced-calorie diet and exercise regularly"<<endl<<"----------------------------------------"<<endl;
+        cout <<"People with obesity are more likely to develop a number of potentially serious health problems, \n"<<
+        "including: Heart disease and strokes. Obesity makes you more likely to have high blood pressure and \n"
+        <<"unhealthy cholesterol levels, \n"
+        <<"which are risk factors for heart disease and strokes. Type 2 diabetes."<<endl<<"----------------------------------------"<<endl;
         }
         else{
         cout<<"enter valid answer"<<endl<<"----------------------------------------"<<endl;
         }
     }
     }
-
-        cout<<" Do you need a gym ? ";
+        cout<<"Do you need a gym in Cairo ? ";
         string ans;
         cin>>ans;
-
-    if (ans== "yes"){
-    cout<< "Here are some recommendations :"<<endl;
+cout<<endl;
+    if (ans== "yes" || ans== "Yes"||ans== "YES"){
+    cout<< "Here are some recommendations :"<<endl<<endl;
     cout << gymname("world gym ") ;
-    cout << gymaddress("in october") <<endl;
+    cout << gymaddress("in 6th of October ") <<endl;
 
     cout << gymname("Gold gym ");
-    cout << gymaddress("in maadi")<<endl;
+    cout << gymaddress("in Maadi")<<endl;
 
     cout << gymname("Ufc gym ")  ;
-    cout << gymaddress("in zayed")<<endl;
+    cout << gymaddress("in Zayed")<<endl;
 
     cout << gymname("Air gym ") ;
-    cout << gymaddress("in nasr city")<<endl;
+    cout << gymaddress("in Nasr city")<<endl;
 
     cout << gymname("Glow gym ");
-    cout << gymaddress("in haram") <<endl<<"----------------------------------------"<<endl;
+    cout << gymaddress("in Haram St.") <<endl<<"----------------------------------------"<<endl;
     }
-    else
-    cout<< "Good luck"<<endl<<"----------------------------------------"<<endl;
 
-    cout <<" Do you need a doctor ? ";
+
+    cout <<"Do you need a doctor in Cairo ? ";
     string sol;
     cin>>sol;
+cout<<endl;
+    if ( sol== "yes" || sol== "YES" ||sol== "Yes"){
+    cout<<"Here are some doctors you can keep contact with : "<<endl<<endl;
+    cout<<"1.Dr. Sherif Hakky"<<endl;
+    cout<<"2.Dr. Mahmoud Zakaria"<<endl;
+    cout<<"3.Dr. osama khalil"<<endl<<endl;
+    cout<<"Thanks for using our BMI Calculator !"<<endl<<"----------------------------------------"<<endl;
 
-    if ( sol== "yes" ){
-    cout<<"Here are some doctors you can keep contact with : "<<endl;
-    cout<<"1.Dr. Arthur Agatston"<<endl;
-    cout<<"2.Dr. Shawn Bacon"<<endl;
-    cout<<"3.Dr. Mark Hyman"<<endl;
     }
 
     else
-    exit(0) ;
+    cout<<"Thanks for using our BMI Calculator !"<<endl<<"----------------------------------------"<<endl;
 
     return 0 ;
     }
